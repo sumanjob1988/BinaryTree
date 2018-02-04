@@ -29,7 +29,13 @@ namespace BinaryTreeDS
 
             //Initialize Utility Class to access utility methods
             Utility utility = new Utility();
-            Console.WriteLine("Height of Tree : {0}", utility.findBinaryTreeHeight(tree));
+
+            //PreOrder Traversal
+            Console.Write("PreOrderTraversal: \t");
+            utility.PreOrderTraversal(tree);
+
+            //Heigth of tree
+            Console.WriteLine("\n\nHeight of Tree : {0}", utility.FindBinaryTreeHeight(tree));
 
             Console.ReadKey();
         }
