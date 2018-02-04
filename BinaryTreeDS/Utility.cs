@@ -8,6 +8,7 @@ namespace BinaryTreeDS
 {
     class Utility
     {
+        #region Height of Binary Tree
         /// <summary>
         /// Finds the height of the binary tree.
         /// </summary>
@@ -27,7 +28,9 @@ namespace BinaryTreeDS
             else
                 return rightHeight;
         }
+        #endregion
 
+        #region PreOrder Traversal
         /// <summary>
         /// Pre Order traversal.
         /// </summary>
@@ -43,9 +46,10 @@ namespace BinaryTreeDS
             {
                 return;
             }
-            Console.Write(root.data+"\t");
+            Console.Write(root.data + "\t");
             preOrderTraversal(root.left);
             preOrderTraversal(root.right);
-        }
+        } 
+        #endregion
     }
 }
